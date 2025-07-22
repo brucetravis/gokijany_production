@@ -1,0 +1,17 @@
+.story-details {
+    background-color: rgb(255, 8, 8);
+    /* height: 100px; */
+    padding: 20px;
+    /* padding-top: 50px; */
+    /* z-index: 300; */
+}
+
+.story-details .img-fluid {
+    object-fit: cover;
+    height: 500px;
+    width: 100%;
+}
+
+/* .test-news-container a {
+    
+} */

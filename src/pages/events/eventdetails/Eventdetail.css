@@ -1,0 +1,80 @@
+.event-detail {
+  background-image: url(../assets/images/bg-image.jpeg);
+  height: auto;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding-top: 10vh;
+  position: relative;
+  color: #e3e3e3;
+  text-shadow: 0 0 12px black;
+}
+.event-detail::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, #05a65371, #01351bcd, #01140b);
+}
+
+.event-detail .container {
+  z-index: 12;
+  position: relative;
+}
+
+.event-info {
+  /* gap: 150px; */
+  backdrop-filter: blur(8px);
+  padding-bottom: 10vh;
+}
+
+.event-detail-image img {
+  height: 50vh;
+  width: 100%;
+  object-fit: cover;
+  image-rendering: high-quality; /* Ensures better quality rendering */
+}
+
+.event-detail-information {
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 20px rgba(129, 129, 129, 0.39);
+  border-radius: 12px;
+}
+
+.concert-ticket {
+  padding: 10px;
+  border-radius: 20px;
+  transition: 0.4s;
+  box-shadow: 0 4px 16px rgba(83, 83, 83, 0.5);
+  transition: transform 0.3 ease;
+}
+.concert-ticket img {
+  height: 20vh;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.concert-ticket:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+.ticket-card {
+  margin-top: 2vh;
+}
+.ticket-btn {
+  background-color: #05a653;
+  transition: 0.5s ease-in-out;
+  border-radius: 12px;
+  border: none;
+  width: 100%;
+  margin-top: 2vh;
+  padding: 8px;
+  font-size: 20px;
+}
+
+.ticket-btn:hover {
+  cursor: pointer;
+}

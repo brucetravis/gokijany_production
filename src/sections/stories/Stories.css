@@ -1,0 +1,14 @@
+.stories-container {
+    /* background-color: red; */
+    padding: 20px;
+}
+
+
+.stories-div {
+    /* background-color: blue; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+

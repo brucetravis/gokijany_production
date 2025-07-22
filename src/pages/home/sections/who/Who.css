@@ -1,0 +1,22 @@
+#who{
+padding-top: 5vh;
+padding-bottom: 5vh
+}
+#who .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #who .container > div {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  @media (max-width: 768px) {
+    #who .container > div {
+      width: 95%;
+    }
+  }
+  

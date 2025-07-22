@@ -1,0 +1,277 @@
+.image-section {
+  height: 100vh;
+  /* height: auto; */
+  width: 100%;
+  margin: 0;
+  background-color: #f8f9fa; /* light gray */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.carousel {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    overflow: hidden;
+}
+
+
+.carousel img.main-image {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    height: 100%;
+    width: 100%;
+    display: none;
+    object-fit: cover;
+    filter: brightness(50%);
+    transition: opacity 0.6s ease-in-out;
+}
+
+
+.carousel img.active {
+    display: block;
+}
+
+
+.prev,
+.next {
+    position: absolute;
+    top: 85%;
+    transform: translateY(-50%);
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color: rgba(21, 80, 24, 0.85);
+    color: #ffffff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    font-size: 10px;
+    /* font-size: 16px; */
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s ease-in-out;
+    z-index: 100
+}
+
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(248, 253, 248, 0.9);
+    color: black;
+}
+
+
+.prev {
+    left: 10vw;
+}
+
+
+.next {
+    left: 15vw;
+}
+
+
+.image-texts {
+    position: absolute;
+    top: 20%;
+    left: 7%;
+    z-index: 70
+}
+
+
+.image-title {
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: bold;                     
+}
+
+
+.image-type {
+    /* color: rgb(250, 165, 8); */
+    color: #ffda0b;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 48px;
+    font-weight: bold;                     
+}
+
+.image-desc {
+    /* color: rgb(250, 165, 8); */
+    color: #ffffff;
+    /* font-weight: bold;                      */
+}
+
+
+
+.thumbnails {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    display: flex;
+    gap: 8px;
+    z-index: 95;
+    /* overflow-x: auto;
+    max-width: 70vw;
+    padding-bottom: 10px; */
+    flex-wrap: wrap;
+}
+
+
+.thumbnails img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    opacity: 0.5;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+
+.thumbnails img:hover,
+.thumbnails img.active {
+    opacity: 1;
+    border-color: #0aac12; /* Highlight border */
+}
+
+
+@media (max-width: 1024px) {
+    .image-section {
+        height: auto;
+    }
+
+    .image-texts {
+        top: 15%;
+        left: 5%;
+    }
+
+    .image-title {
+        font-size: 24px;
+    }
+
+    .image-type {
+        font-size: 36px;
+    }
+
+    .image-desc {
+        font-size: 14px;
+        max-width: 90%;
+    }
+
+    .prev {
+        left: 10vw;
+    }
+
+    .next {
+        left: 75vw;
+    }
+
+    .thumbnails img {
+        width: 100px;
+        height: 130px;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-section {
+        height: auto;
+        /* padding-bottom: 30px; */
+    }
+
+    .image-texts {
+        top: 20%;
+        left: 10%;
+    }
+
+    .image-title {
+        font-size: 20px;
+    }
+
+    .image-type {
+        font-size: 28px;
+    }
+
+    .image-desc {
+        font-size: 15px;
+    }
+
+    .prev,
+    .next {
+        top: 70%;
+        width: 40px;
+        height: 40px;
+        font-size: 12px;
+        background-color: rgba(21, 80, 24, 0.3);
+    }
+
+    .prev {
+        left: 2vw;
+        width: 45px;
+        height: 45px;
+    }
+
+    .next {
+        left: 90vw;
+        width: 47px;
+        height: 47px;
+    }
+
+    .thumbnails {
+        display: none;
+        /* position: absolute;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 10px 0;
+        gap: 5px; */
+    }
+
+    /* .thumbnails img {
+        width: 80px;
+        height: 100px;
+    } */
+}
+
+@media (max-width: 480px) {
+    .image-title {
+        font-size: 16px;
+    }
+
+    .image-type {
+        font-size: 22px;
+    }
+
+    .image-desc {
+        font-size: 11px;
+    }
+
+    .prev,
+    .next {
+        top: autos;
+        bottom: 10px;
+    }
+
+    .carousel {
+        height: 90vh;
+    }
+
+    .image-texts {
+        top: 5%;
+    }
+}
+
+
+
+
+
+
+

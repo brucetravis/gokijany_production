@@ -1,0 +1,40 @@
+footer {
+    position: absolute;
+    width: 100vw;
+    height: 35vh;
+    background-color: #05a653;
+    color: white;
+    /* padding-left: 10%;
+    padding-right: 10%; */
+  }
+  footer .socials a {
+    margin-right: 10px;
+  }
+  
+  footer > .container > .logo > img {
+    width: 191px;
+  }
+  footer li {
+    list-style: none;
+  }
+  .footer_footer {
+    border-top: solid gray 1px;
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    text-align: center;
+  }
+  
+  @media (max-width: 952px) {
+    footer {
+      height: auto;
+      min-height: 45vh;
+    }
+    footer .quick_links {
+      display: none;
+    }
+  
+    footer .socials {
+      display: none;
+    }
+  }

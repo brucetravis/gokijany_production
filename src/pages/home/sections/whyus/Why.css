@@ -1,0 +1,104 @@
+.why-page {
+  background-color: black;
+  display: flex;
+  padding-top: 3vh;
+}
+
+.why-texts {
+  text-align: justify;
+}
+
+.why-page h2 {
+  color: #05e653;
+  font-weight: 500;
+}
+
+.why-page h2::after {
+  content: "☘️";
+  background-color: #05a653;
+  display: inline-block;
+  font-size: 15px;
+  text-align: center;
+  line-height: 20px;
+  margin-left: 10px;
+  /* height: 30px;
+    width: 30px; */
+}
+
+.why-page .why-p {
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.why-page .why-texts {
+  width: 50vw;
+}
+
+.why-p-texts {
+  color: white;
+}
+
+.why-p-texts p {
+  /* width: 40vw; */
+  font-size: 17px;
+}
+
+.why-p-texts a {
+  color: white;
+  text-decoration: none;
+  background-color: #0ba13f;
+  padding: 7px 70px;
+  display: inline-flex;
+  margin-top: 1vh;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.why-p-texts a:hover {
+  color: #444444;
+  background-color: #17a749;
+}
+
+.why-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.why-image img {
+  height: 80%;
+  width: 100%;
+  margin-left: 2vw;
+  object-fit: contain;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+@media (max-width: 992px) {
+  .why-page {
+    flex-direction: column;
+    padding-left: 5vw;
+    /* background-color: blue; */
+  }
+
+  .why-page .why-texts {
+    width: 100%;
+    /* background-color: red; */
+  }
+}
+
+@media (max-width: 480px) {
+  .why-page {
+    padding-left: 10vw;
+  }
+
+  .why-page .why-texts {
+    width: 100%;
+    /* background-color: red; */
+  }
+
+  .why-p-texts {
+    color: white;
+    font-size: 10px;
+  }
+}

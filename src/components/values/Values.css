@@ -1,0 +1,19 @@
+.values-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 0.3 ease, z-index 0.3s ease;
+}
+
+
+.value-icon {
+    font-size: 120px;
+    transition: transform 0.3s ease, z-index 0.3s ease;
+}
+
+
+.values-section .text-white {
+    font-size: 20px;
+    font-weight: bold;
+}
+

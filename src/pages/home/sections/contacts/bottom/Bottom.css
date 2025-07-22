@@ -1,0 +1,172 @@
+.bottom-body {
+    background-image: url('../../../../../images/deep-seek.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 130vh;
+    width: 100vw;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: -5vh;
+    padding-bottom: 3vh
+}
+
+.bottom-body p {
+    position: absolute;
+    top: 7vw;
+    left: 20vw;
+    color: white;
+    font-size: 52px;
+    /* margin-top: 15vh; */
+    /* margin-left: 20vw; */
+    width: 60vw;
+}
+
+
+
+.links {
+    display: inline-flex;
+    gap: 20px;
+    position: absolute;
+    top: 25vw;
+    left: 43vw;
+    align-items: center;
+}
+
+.links .get {
+    padding: 10px;
+    text-decoration: none;
+    background-color: white;
+    color: #333333;
+    border-radius: 50px;
+    transition: background-color 0.3s ease
+}
+
+
+.links .get:hover {
+    background-color: rgb(235, 231, 231);
+    cursor: pointer;
+}
+
+.links .learn {
+    padding: 10px;
+    text-decoration: none;
+    background-color: transparent;
+    color: #333333;
+    border-radius: 50px;
+    border: 1px solid white;
+    color: white
+}
+
+
+.snappy-footer {
+    height: auto;
+    position: absolute;
+    left: 2vw;
+    right: 2vw;
+    top: 825vh;
+    padding-top: 10vh;
+    padding-bottom: 3vh;
+    /* background-color: #eee; */
+    /* background-color: #05a653; */
+    background-color: white;
+    border-radius: 25px
+}
+
+.snappy-logo-and-apps {
+    display: flex;
+    gap: 300px;
+}
+
+.snappy-logo img {
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    margin-bottom: 20vh;
+    margin-left: -20vw;
+    background-color: green;
+}
+
+
+.snappy-footer .apps p {
+    color: white;
+}
+
+.snappy-footer p {
+    color: black;
+}
+
+.snappy-apps {
+    display: flex;
+    gap: 20px
+}
+
+.apps {
+    height: 8vh;
+    width: 13vw;
+    border-radius: 5px;
+}
+
+.snappy-apps .apps-p {
+    margin-top: "-0.5vh";
+    font-size: "25px"
+}
+
+
+
+@media (max-width: 992px) {
+    .snappy-footer {
+        top: 1140vh;
+    }
+
+    /* .snappy-logo-and-apps {
+        display: flex;
+        gap: 300px;
+    } */
+
+    .bottom-body .ready {
+        font-size: 25px;
+    }
+
+    .links {
+        left: 33vw;
+    }
+
+    .snappy-footer {
+        left: 2vw;
+        right: 2vw;
+        top: 1105vh;
+    }
+
+    .apps {
+        height: 8vh;
+        width: 13vw;
+        font-size: 10px;
+    }
+
+    .apps-p {
+        font-size: 10px;
+    }
+
+    .snappy-logo-and-apps {
+        gap: 60px;
+    }
+
+    .snappy-footer {
+        top: 850vh;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .ready {
+        font-size: 10px;
+    }
+    
+    .links {
+        top: 45vw;
+        left: 26vw;
+    }
+}
+

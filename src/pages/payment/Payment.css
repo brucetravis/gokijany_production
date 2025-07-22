@@ -1,0 +1,77 @@
+.payment {
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.payment .payment-container {
+  /* width: 350px;
+  height: 400px; */
+  border-radius: 20px;
+  padding: 20px;
+}
+.payment .payment-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.payment .payment-header img {
+  width: 100px;
+}
+.payment .payment-header .back-button-icon {
+  color: gray;
+}
+.payment .payment-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 280px;
+}
+.payment .payment-container hr {
+  width: 300px !important;
+}
+.payment .payment-container .email,
+.payment .payment-container .full-name {
+  outline: none;
+  border: solid 2px #00b5b1;
+  padding: 5px;
+  width: 100%;
+  border-radius: 6px;
+}
+.payment .payment-container .form-group {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border-top: solid 1px rgb(188, 188, 188);
+  padding: 20px;
+}
+.payment .payment-container .form-group input {
+  outline: none;
+  background-color: #aeaeae;
+  padding: 5px;
+  border-radius: 6px;
+  color: white;
+  text-align: center;
+}
+.payment .payment-container .form-group input::placeholder {
+  color: white;
+}
+
+.payment .payment-container .form-group .sessions {
+  width: 30%;
+}
+.payment .payment-container .form-group .coupon {
+  width: 60%;
+}
+.payment .payment-container .submit-btn {
+  background-color: #00b5b1;
+  width: 100%;
+  color: #fff;
+  height: 40px;
+  border-radius: 10px;
+}

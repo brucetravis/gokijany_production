@@ -1,0 +1,95 @@
+.gallery-section {
+    /* background-color: red; */
+    /* background-image: url(../../images/slider-2.jpg); */
+    background-image: url(../../data/images/gokijany-gallery.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    /* filter: brightness(90%); */
+    padding-top: 15vh;
+    height: auto;
+    position: relative;
+}
+
+.gallery-section::before {
+    content: "";
+    background: linear-gradient(to bottom, #04462b66);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2
+}
+
+
+.gallery-section .title {
+    margin-bottom: 5vh;
+    position: relative;
+    z-index: 6;
+}
+
+
+.gallery-section .search-div {
+    /* margin-bottom: 5vh;
+    width: 20vw; */
+    margin: 0 auto 5vh auto;
+    width: 100%;
+    max-width: 400px; /* Limit how big it can grow */
+    position: relative;
+    z-index: 10;
+    margin-left: auto
+}
+
+
+
+.gallery-section .fas {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: gray;
+    font-size: 1rem;
+    z-index: 10;
+}
+
+
+.gallery-section .event-search-box {
+    padding-left: 35px;
+}
+
+.gallery-section img {
+    height: 300px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.5s ease-in-out;
+    z-index: 5
+}
+
+
+.gallery-section img:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    /* transform: scale(1.1); */
+    border: 3px solid rgb(61, 60, 60);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+.gallery-section .location {
+    z-index: 5;
+}
+
+
+.gallery-section .location-results {
+    z-index: 5;
+}
+
+
+@media screen and (max-width: 746px) {
+    .gallery-section .search-div {
+        margin: 0 auto 5vh auto; /* centers it */
+        width: 80vw;
+    }
+}

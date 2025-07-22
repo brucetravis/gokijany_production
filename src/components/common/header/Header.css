@@ -1,0 +1,148 @@
+#header {
+  transition: all 0.5s;
+  z-index: 997;
+}
+
+#header .logo a {
+  color: #fff;
+}
+
+#header .logo a span {
+  color: #05a653;
+}
+
+#header .logo img {
+  max-height: 72px;
+}
+
+#header.header-scrolled,
+#header.header-inner-pages {
+  background: #353535c0;
+}
+
+#header.header-scrolled .logo a,
+#header.header-inner-pages {
+  color: #000;
+}
+
+#header .logo {
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.navbar {
+  padding: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar ul.menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #353535c0;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.navbar ul.menu.open {
+  display: flex;
+  opacity: 1;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  white-space: nowrap;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
+  color: #05a653;
+}
+
+.mobile-nav-toggle {
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 991px) {
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .mobile-nav-toggle {
+    display: block;
+    margin-left: 45%;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    position: relative;
+  }
+
+  .navbar ul.menu {
+    display: none;
+  }
+
+  .navbar ul.menu.open {
+    display: flex;
+  }
+  .navbar.mobile ul {
+    background: linear-gradient(
+      to left,
+      transparent,
+      rgba(0, 0, 0, 0.071),
+      rgba(0, 0, 0, 0.927)
+    );
+    display: block;
+    position: absolute;
+    top: 6vh;
+    left: 40%;
+    border-radius: 10px;
+  }
+}

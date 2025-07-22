@@ -1,0 +1,127 @@
+.events-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1212;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  transition: 0.4s;
+  /* margin-top: -6vh; */
+  padding: 0 20px; /* Added padding for smaller screens */
+}
+
+.events-header.events-header-scrolled {
+  background: linear-gradient(to right, #05a6539e, #222222e1);
+}
+
+.events-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Limits container width */
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.events-header .events-search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #222222e1;
+  color: #d3d3d3;
+  width: 30vw;
+  min-width: 250px; /* Prevents search bar from getting too small */
+  max-width: 400px;
+  height: 40px;
+  border-radius: 20px;
+  padding: 2px 10px;
+  border: solid 1px #05a653;
+}
+
+.events-header .events-search-bar input {
+  border: none;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  outline: none;
+  color: #f3f3f3;
+}
+
+.events-header .events-header-options {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.events-header .events-header-option {
+  border: solid 1px #05a653;
+  border-radius: 20px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+  white-space: nowrap;
+}
+
+.events-header .events-header-option:hover {
+  background-color: #05a653c2;
+  color: #fff;
+}
+
+.events-header .events-header-option:nth-child(2) {
+  margin-left: 1vw;
+}
+
+.events-header .events-header-option p {
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .events-header {
+    height: auto;
+    padding: 10px 15px;
+  }
+  .events-header.events-header-scrolled {
+    background: linear-gradient(to bottom, #05a6539e, #222222e1);
+  }
+
+  .events-header .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .events-header .events-search-bar {
+    width: 80%;
+    max-width: 320px;
+    transform: scale(0.85);
+  }
+
+  .events-header .events-header-options {
+    gap: 10px;
+  }
+
+  .events-header .events-header-option {
+    justify-content: center;
+    transform: scale(0.85);
+  }
+}
+
+@media (max-width: 480px) {
+  .events-header {
+    padding: 8px;
+  }
+
+  .events-header .events-search-bar {
+    width: 100%;
+  }
+
+  .events-header .events-header-option {
+    width: 100%;
+  }
+}

@@ -1,0 +1,6 @@
+.contact-dropdowns p {
+  cursor: pointer;
+  border-top: 1px solid #d4d2d2;
+  padding: 10px;
+  font-size: 16px !important;
+}

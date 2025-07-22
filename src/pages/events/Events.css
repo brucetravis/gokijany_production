@@ -1,0 +1,24 @@
+#events {
+  background-image: url(./assets/images/bg-image.jpeg);
+  height: auto;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding-top: 10vh;
+  position: relative;
+  color: #d3d3d3;
+}
+#events::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, #05a65371, #01351bcd, #011d0f);
+  pointer-events: none;
+}
+#events .content {
+  z-index: 12;
+  position: relative;
+}

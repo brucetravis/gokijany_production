@@ -1,0 +1,17 @@
+.impact-stats-container {
+    color: white;
+    background-image: url(../../data/images/slider-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px;
+}
+
+.impact-stats-container .container {
+    backdrop-filter: blur(12px);
+    padding: 10px;
+}
+
+
+
+

@@ -1,0 +1,15 @@
+.all-events {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3vh;
+  padding-bottom: 10vh;
+}
+.all-events .row {
+  width: 100%;
+  justify-content: space-around;
+}
+.all-events h3 {
+  margin-bottom: 2vh;
+  color: #fff;
+}

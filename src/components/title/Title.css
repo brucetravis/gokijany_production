@@ -1,0 +1,23 @@
+.title h2 {
+  font-size: 15px;
+  color: #05a653;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.title h2::after {
+  content: "☘️";
+  background-color: #05a653;
+  display: inline-block;
+  font-size: 15px;
+  text-align: center;
+  line-height: 20px;
+  margin-left: 10px;
+}
+
+.title p {
+  font-size: 30px;
+  margin-top: -1vh;
+  font-weight: bold;
+}

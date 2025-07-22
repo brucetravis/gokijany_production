@@ -1,0 +1,62 @@
+#subscribe {
+    background-image: url("../../../../data/images/subscribe.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 430px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    margin-top: 3vh;
+  }
+  #subscribe::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.472);
+  }
+  
+  #subscribe .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 1;
+    position: relative;
+    height: 100%;
+  }
+  
+  #subscribe .container > div {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    width: 478px;
+  }
+  #subscribe .container > div form {
+    display: flex;
+    justify-content: space-between;
+  }
+  #subscribe input {
+    border: none;
+    outline: none;
+  }
+  #subscribe input:nth-child(2) {
+    width: 121px;
+  }
+  
+  @media (max-width: 952px) {
+    #subscribe .container > div {
+      padding: 5px;
+      width: 300px;
+    }
+    #subscribe input:nth-child(2) {
+      margin-left: 20px;
+    }
+  }

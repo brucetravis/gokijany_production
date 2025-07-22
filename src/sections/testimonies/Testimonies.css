@@ -1,0 +1,44 @@
+.testimonies-container {
+    /* background-color: blue; */
+    background-image: url(../../data/images/slider-4.jpg);
+    background-position: center;
+    background-size: cover;
+    /* backdrop-filter: blur(12px); */
+    /* filter: brightness(50%); */
+    /* background: linear-gradient(to right, aqua, blue); */
+    /* background: linear-gradient(to bottom, aqua, blue); */
+    padding: 20px;
+    display: flex;
+    position: relative;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 5px; /* Adjust spacing between rows and columns 
+    justify-content: center;
+    padding: 20px; */
+}
+
+.testimonies-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(36, 32, 32, 0.5);;
+    /* z-index: 2 */
+}
+
+
+.testimonies-container .container {
+    position: relative;
+    z-index: 2
+}
+
+.testimonies-container .container .row{
+    gap: 30px;
+    justify-content: center;
+}
+
+/* .test-card-main {
+    margin-bottom: -10vh;
+} */

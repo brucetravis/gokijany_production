@@ -1,0 +1,82 @@
+.categories {
+  margin-top: 3vh;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 10vh;
+  z-index: 1000;
+}
+
+.categories-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for Edge */
+  padding: 0 10px;
+  width: 100%;
+}
+
+.categories-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+.category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 10px 18px;
+  color: #f3f3f3;
+  background-color: #222;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  border: solid 1px #05a653;
+  font-size: 1rem; /* Adjusts for different screen sizes */
+  white-space: nowrap; /* Prevents text from breaking */
+  min-width: fit-content;
+}
+
+.category.active {
+  background-color: #f3f3f3;
+  color: #222;
+}
+
+.category:hover {
+  border: solid 1px #05a653;
+  transform: scale(0.95);
+}
+
+@media (max-width: 1126px) {
+  .categories-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .categories {
+    height: 7vh;
+    top: 14vh;
+  }
+
+  .category {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .categories {
+    height: auto;
+    margin-top: 2vh;
+  }
+
+  .category {
+    padding: 6px 14px;
+    font-size: 0.85rem;
+  }
+}

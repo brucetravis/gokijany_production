@@ -1,0 +1,104 @@
+.event-card {
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px black;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 250px; /* Ensures consistent width on larger screens */
+  max-width: 300px; /* Ensures consistent width on larger screens */
+  margin: 2vh 1vw;
+  text-decoration: none;
+}
+
+.event-card:hover {
+  box-shadow: 0px 0px 16px #05a653c2;
+}
+
+.event-card img {
+  width: 100%;
+  height: 40vh;
+  max-height: 280px; /* Prevents excessive height on large screens */
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.event-card .event-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.event-card .event-title {
+  color: white;
+  font-weight: 600;
+  margin-top: 1vh;
+  font-size: 1.2rem; /* Adjusts for better readability */
+}
+
+.event-card .event-location {
+  color: rgb(221, 189, 6);
+}
+
+.event-card .event-price {
+  color: #fff;
+  font-weight: 500;
+}
+.event-card .event-date {
+  color: #d3d3d3;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .event-card {
+    max-width: 300px;
+  }
+
+  .event-card img {
+    height: 35vh;
+    max-height: 250px;
+  }
+
+  .event-card .event-title {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .event-card {
+    max-width: 90%;
+  }
+
+  .event-card img {
+    height: 30vh;
+    max-height: 220px;
+  }
+
+  .event-card .event-title {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-card {
+    max-width: 100%;
+    padding: 8px;
+  }
+
+  .event-card img {
+    height: 25vh;
+    max-height: 200px;
+  }
+
+  .event-card .event-title {
+    font-size: 0.95rem;
+  }
+
+  .event-card .event-details {
+    padding: 8px;
+  }
+}
