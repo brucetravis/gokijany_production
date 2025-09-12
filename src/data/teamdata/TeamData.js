@@ -5,7 +5,13 @@ const teamData = [
       title: "Lumona Mulengwa",
       type: "FOUNDER/CEO",
       description: `
-        Lorem ipsum is a dummy or placeholder text commonly used in graphic design, publishing,\nand web development...
+        Lumona is a self-taught developer with a diverse range of interests, including Physics, Technology, Astronomy, and Music. 
+        Throughout the years, he has been honoured to represent Kenya globally on seven occasions in the global robotics olympics, from 2018 
+        to 2025. During these competitions, he had the opportunity to participate once as a team member and the rest as the Technical mentor, 
+        which has provided him with invaluable experience and knowledge in the field of robotics.
+        As a result of traveling extensively and interacting with numerous tech enthusiasts worldwide, Lumona has realised the importance of 
+        raising tech awareness among young people in Kenya. To tackle this need, he took on a mission to over 30 counties within Kenya, where 
+        he shared his expertise on STEM-related topics and encouraged high school students to embrace technology.
       `
     },
 
@@ -23,7 +29,7 @@ const teamData = [
       id: 3,
       image: require("../images/team/bruce.jpg"),
       title: "Bruce Travis",
-      type: "Web Developer",
+      type: "Lead Developer",
       description: `
         Bruce is a self-taught full-stack developer with a Diploma in Business Information Technology. As the lead web developer behind Gokijany, he is dedicated to crafting clean, impactful digital 
         experiences and leveraging technology to create innovative solutions—particularly in climate-focused and socially driven spaces. Bruce has independently mastered a diverse tech stack, including 
@@ -61,8 +67,9 @@ const teamData = [
 
     {
       id: 6,
-      image: require("../images/team/abby-wakarima.jpg"),
-      title: "Abby Wakarima",
+      // image: require("../images/team/abby-wakarima.jpg"),
+      image: require("../images/team/abby_2.jpg"),
+      title: "Miss Wakarima",
       type: "Policy Researcher",
       description: `
         A dynamic and inquisitive volunteering policy researcher with a strong interest in the intersections of public health, environmental sustainability, and economic development. At just 20 years old, I 

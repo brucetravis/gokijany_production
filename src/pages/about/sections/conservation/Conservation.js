@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Conservation.css'
 import React from 'react'
 
@@ -12,16 +13,13 @@ export default function Conservation(){
           <div className="row">
             <div className="col-lg-6">
               <p className="p-3">
-                Gokijany transforms climate action into financial opportunity,
-                allowing users to generate income while contributing to
-                sustainability. By participating in carbon offset activities,
-                users can earn carbon credits, which can be traded or sold for
-                financial gain. In 2023, the global carbon credit market was
-                valued at approximately $479.41 billion and is projected to grow
-                at a compound annual growth rate of 39.4% from 2024 to 2030.
-                This growth presents significant financial opportunities for
-                individuals and businesses engaging in carbon offset
-                initiatives.
+                Gokijany transforms climate action into financial opportunity, allowing users to generate 
+                income while contributing to sustainability. By participating in carbon offset activities, 
+                users can earn carbon credits, which can be traded or sold for financial gain. In 2023, the global 
+                carbon credit market was valued at approximately $479.41 billion and is projected to grow at a compound 
+                annual growth rate of 39.4% from 2024 to 2030. This growth presents significant financial opportunities 
+                for individuals and businesses engaging in carbon offset initiatives, with Gokijany continuously 
+                developing cutting-edge solutions for carbon management to maximize both environmental and economic impact.
               </p>
               <p className="p-3">
                 Gokijany introduces Goshilingy, a carbon-backed digital currency
@@ -35,6 +33,13 @@ export default function Conservation(){
                 the demand for Goshilingy is expected to increase, potentially
                 leading to appreciation in its value.
               </p>
+
+              <Link
+                to="/careers"
+                className="section_btn scrollto"
+              >
+                Careers
+              </Link>
             </div>
             <div className="col-lg-6"></div>
           </div>

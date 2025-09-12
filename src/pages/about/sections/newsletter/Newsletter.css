@@ -51,12 +51,25 @@
     width: 121px;
   }
   
-  @media (max-width: 952px) {
-    #subscribe .container > div {
-      padding: 5px;
-      width: 300px;
-    }
-    #subscribe input:nth-child(2) {
-      margin-left: 20px;
-    }
+@media (max-width: 992px) {
+  #subscribe .container > div {
+    padding: 5px;
+    width: 300px;
   }
+  #subscribe input:nth-child(2) {
+    margin-left: 20px;
+  }
+
+  #subscribe .container h2 {
+    text-align: center;
+  }
+
+  #subscribe input:nth-child(2) {
+    width: 110px;
+  }
+
+  #subscribe .container > div {
+    width: 325px;
+  }
+  
+}

@@ -24,7 +24,7 @@ export default function MiddleContact() {
   };
 
   return (
-    <section className="container">
+    <section className="container-fluid d-flex justify-content-center">
       <div className="contact-middle-section row mt-5 d-flex">
         <div className="contact-questions col-md-4">
           <div className="section-title">

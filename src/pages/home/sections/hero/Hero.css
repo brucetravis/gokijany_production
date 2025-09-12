@@ -1,7 +1,8 @@
-.hero-section {
+/* .hero-section {
     height: 100vh;
     background-attachment: fixed;
     background-image: url('../../../../data/images/hero-removebg.png');
+    /* background-image: url(../../../../data/images/hero-removebg.png);
     background-position: center;
     background-size: 60%;
     background-repeat: no-repeat;
@@ -18,15 +19,22 @@
     bottom: 0;
     background: radial-gradient(transparent, black);
 }
+ */
 
+ .hero-section {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-color: white;
+    position: relative;
+}
 
-
-
-
-
-
-
-
-
-
-
+.hero-section:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(transparent, rgba(0,0,0,0.7));
+    pointer-events: none; /* lets clicks pass through */
+}

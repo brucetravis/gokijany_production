@@ -101,7 +101,7 @@ export default function Dropdowns() {
           <div style={{ paddingLeft: "10px", fontSize: '17px', marginBottom: "15px" }}>
             Goshilingy is our crypto currency which you will be rewarded with
             according your total carbon credits. The ratio is 1:1. 1 Carbon
-            cretit = 1 Goshilingy.
+            credit = 1 Goshilingy.
           </div>
         )}
       </div>
@@ -165,7 +165,7 @@ export default function Dropdowns() {
         </p>
         {isOpen5 && (
           <div style={{ paddingLeft: "10px", fontSize: '17px', marginBottom: "15px" }}>
-            From our partnerships, we are confident that job oppportunities 
+            From our partnerships, we are confident that job opportunities 
             will be made available for our volunteers. Once It is finalized
             you will be informed.
           </div>

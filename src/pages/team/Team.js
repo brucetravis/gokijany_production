@@ -1,124 +1,39 @@
-import React, { useEffect, useState } from 'react'
-import './Team.css'
-import { AnimatePresence, motion } from 'framer-motion'
-import Preloader from '../../components/common/preloader/Preloader'
-import teamData from '../../data/teamdata/TeamData'
+import React, { useEffect, useState } from 'react';
+import './Team.css';
+import Preloader from '../../components/common/preloader/Preloader';
+import teamData from '../../data/teamdata/TeamData';
+import { useNavigate } from 'react-router-dom';
 
-export default function Gallery() {
-
-
-  // state to update the UI when the buttons are clicked 
-  const [ currentIndex, setCurrentIndex ] = useState(0) // initial state is the first index
-  // state to handle the loading of a page
-  const [ loading, setLoading ] = useState(true) // Initial state is true
+export default function Team() {
+  const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
 
 
-  // useEffect to change the images periodically
   useEffect(() => {
-      
-      // store the interval in a variabe in order to clear it later
-      const imageInterval = setInterval(() => {
-        // Update the state using the state function
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % teamData.length)
+    const timer = setTimeout(() => setLoading(false), 1500);
+    return () => clearTimeout(timer);
+  }, []);
 
-      }, 10000) //images will change and render after every 10 seconds
-    
-      // clear the interval when the component unmounts
-      return () => clearInterval(imageInterval)
-
-  }, []) // empty dependency array
-
-
-  // useEffect to handle the loading of a page
-  useEffect(() => {
-    // function to handle the loading of a page
-    const timer = setTimeout(() => {
-      // After 2 seconds, update setLoading to false
-      setLoading(false)
-    }, 2000)
-    
-    // clear the tieout
-    return () => clearTimeout(timer)
-  }, []) // Empty dependency array, nothing to watch for
-
-
-  // If the page is loading, which is true
-  if (loading) {
-    return <Preloader />
-  }
-
-  let absoluteImages = [ 3, 5, 7 ]
-
+  if (loading) return <Preloader />;
 
   return (
-    <motion.div 
-      initial={{ x: 100, opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-      transition={{ duration: 2, ease: "easeInOut" }}
-      className='image-section'
-    >
-      {/* <h4 className='fs-1 text-danger'>GALLERY</h4> */}
-      <div className='carousel'>
-        
-        <AnimatePresence
-          mode='wait' //wait for the current image to exit before showing the next image
-        >
-          <motion.div 
-            key={teamData[currentIndex].id}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.8 }}
+    <div className="team-section">
+      <h2 className="team-title">Meet the Team</h2>
+      <div className="team-grid">
+        {teamData.map(member => (
+          <div 
+            key={member.id} 
+            className="team-card"
+            onClick={() => navigate(`/members/${member.id}`)}
           >
-            <motion.img 
-              src={teamData[currentIndex].image}
-              alt={teamData[currentIndex].title}
-              className= "active main-image img-fluid"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0.8 }}
-              transition={{ duration: 0.8 }}
-              style={ (absoluteImages.includes(teamData[currentIndex].id)  && window.innerWidth > 980) && { position: "absolute" } }
-            />
-
-            <div className='image-texts'>
-              <p className='image-title'>{teamData[currentIndex].title}</p>
-              <p className='image-type'>{teamData[currentIndex].type}</p>
-              <p className='image-desc' style={{ whiteSpace: 'pre-line'  }}>
-                {teamData[currentIndex].description}
-              </p>
-            </div>
-          </motion.div>
-        </AnimatePresence>
-
-
-        <div className='thumbnails'>
-          {teamData.map((slide, index) => (
-            <img 
-              key={slide.id}
-              src={slide.image}
-              alt={slide.title}
-
-              className={`img-fluid thumbnail ${index === currentIndex ? 'active' : ''}`}
-              onClick={() => setCurrentIndex(index)} // when the thumbail image is clicked render the picture of that image
-            />
-          ))}
-        </div>
-          
-        
-        <button 
-          className="prev"
-          onClick={() => setCurrentIndex((prev) => (prev - 1 + teamData.length) % teamData.length)}
-        >
-          ❮ Prev
-        </button>
-        <button 
-          className="next"
-          onClick={() => setCurrentIndex((prev) => (prev + 1) % teamData.length)}
-        >
-          Next ❯
-        </button>
+            <img src={member.image} alt={member.title} className="team-img" />
+            <h3 className="team-name">{member.title}</h3>
+            <p className="team-role">{member.type}</p>
+            <p className="team-bio">{member.description}</p>
+          </div>
+        ))}
       </div>
-    </motion.div>
-  )
+    </div>
+  );
 }
+

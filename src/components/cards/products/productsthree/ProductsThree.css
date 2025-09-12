@@ -1,0 +1,53 @@
+.products-three {
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+  /* background: #42a5f5; /* blue */
+  background: url("../../../../data/images/events/kireita/ruth_1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+/* .products-three button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: #fff;
+  color: #42a5f5;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+} */
+
+
+.products-three::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.products-three p {
+  position: absolute;
+  z-index: 3
+}
+
+.products-three:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+}

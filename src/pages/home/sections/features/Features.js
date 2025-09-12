@@ -46,7 +46,11 @@ export default function Features() {
           >
             <h2>Climate Events</h2>
           </div>
-          <div className="col-lg-5 project" data-aos="fade-left">
+          <div 
+            className="col-lg-5 project" 
+            data-aos="fade-left"
+            onClick={() => navigate('/greenprojects')}
+          >
             <h2>Clean Projects Support</h2>
           </div>
         </div>

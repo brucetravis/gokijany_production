@@ -7,7 +7,7 @@ import Testimonies from '../../sections/testimonies/Testimonies'
 import ImpactHero from '../../sections/impacthero/ImpactHero'
 import Stories from '../../sections/stories/Stories'
 import CeoOP from '../../sections/stories/ceoop/CeoOP'
-import Reports from '../../sections/reports/Reports'
+// import Reports from '../../sections/reports/Reports'
 
 export default function Impact() {
 
@@ -47,9 +47,9 @@ export default function Impact() {
             <Stories />
         </div>
         
-        <div className="col-12" >
+        {/* <div className="col-12" >
             <Reports />
-        </div>
+        </div> */}
         
         <div className="col-12" >
             <ImpactStats />
