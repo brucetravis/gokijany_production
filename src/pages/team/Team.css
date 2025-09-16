@@ -1,17 +1,18 @@
 .team-section {
-    margin: 0 auto;
-    padding: 60px;
-    flex-wrap: wrap;
-    text-align: center;
-    font-family: 'Verdana', sans-serif;
-    background: linear-gradient(120deg, #a0c4ff, #70db70);
+  margin: 0 auto;
+  padding: 60px;
+  padding-top: 10vh;
+  flex-wrap: wrap;
+  text-align: center;
+  font-family: 'Verdana', sans-serif;
+  background-color: #10bc61;
 }
 
 .team-title {
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 40px;
-  color: #0aac12;
+  color: yellow;
 }
 
 .team-grid {
@@ -61,13 +62,14 @@
 .team-role {
   font-size: 16px;
   font-weight: 650;
-  color: #ff9900;
+  color: yellow;
   margin-bottom: 15px;
 }
 
 .team-bio {
     font-size: 14px;
-    color: #666;
+    /* color: #666; */
+    color: #000000;
     line-height: 1.5;
     display: -webkit-box;
     -webkit-line-clamp: 4; /* show only 4 lines */

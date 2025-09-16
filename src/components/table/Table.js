@@ -126,7 +126,7 @@ export default function Table() {
         transition={{ delay: 0.2 }}
         className='career-table-container'
     >
-        <h4 className='mb-4'>All Careers</h4>
+        {/* <h4 className='mb-4'>All Careers</h4> */}
         <div className='career-table-header d-flex align-items-center justify-content-between mb-4'>
         <div className='career-table-logo d-flex align-items-center justify-content-center gap-2'>
             <img src={require('../../data/images/goky-logo.webp')} alt='Gokijany Logo'/>

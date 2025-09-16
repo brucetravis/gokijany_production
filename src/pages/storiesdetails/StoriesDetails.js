@@ -9,7 +9,7 @@ export default function TestNews() {
   // extract the id from useParams
   const { storyId } = useParams()
 
-  // for each story, find one (find) that matches the item.id
+  // Find one (find) that matches the item.id
   const story = storiesData.find((item) => item.id === storyId)
 
   // Always run useEffect before a return statement

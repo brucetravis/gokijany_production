@@ -8,7 +8,7 @@ export default function MiddleContact() {
   const contactEmailForm = useRef();
 
   const sendEmailForm = (e) => {
-    e.PreventDefault(); // Prevent the page from reloading
+    e.preventDefault(); // Prevent the page from reloading
     emailjs
       .sendForm(
         "service_wbwxzhd", // Link your service Id
@@ -20,7 +20,7 @@ export default function MiddleContact() {
         alert("Email Sent! success");
         console.log("Email Sent", result.text);
       })
-      .catch((error) => alert("Error sending Email: ", error.text));
+      .catch((error) => alert("Error sending Email: " + error.text));
   };
 
   return (
@@ -40,7 +40,12 @@ export default function MiddleContact() {
             onSubmit={sendEmailForm}
             className="email-contact-form mt-3"
           >
-            <input type="email" placeholder="Enter your Email" />
+            <input 
+              type="email" 
+              placeholder="Enter your Email" 
+              name='user_email'
+              required
+            />
             <button className="btn ">Submit</button>
           </form>
         </div>

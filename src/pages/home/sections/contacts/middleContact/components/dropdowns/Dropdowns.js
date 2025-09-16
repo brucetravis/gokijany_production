@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Dropdowns.css";
+import { ChevronDown } from "lucide-react";
 
 export default function Dropdowns() {
   const [isOpen1, setIsOpen1] = useState(false);
@@ -16,23 +17,15 @@ export default function Dropdowns() {
           className="fs-5 d-flex align-items-center gap-4"
         >
           How will we Know that the trees have been planted?
-          <svg
+          
+          <ChevronDown
+            size={20}
             style={{
               transform: isOpen1 ? "rotate(180deg)" : "rotate(0deg)",
               transition: "transform 0.5s ease",
             }}
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            fill="currentColor"
-            className="bi bi-chevron-down"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fillRule="evenodd"
-              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
-            />
-          </svg>
+          />
+          
         </p>
 
         {isOpen1 && (
@@ -48,27 +41,18 @@ export default function Dropdowns() {
           className="fs-5 d-flex align-items-center gap-4"
         >
           Can we partner with you to maximize our environmental impact?
-          <svg
+          
+          <ChevronDown
+            size={20}
             style={{
               transform: isOpen2 ? "rotate(180deg)" : "rotate(0deg)",
               transition: "transform 0.5s ease",
             }}
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            fill="currentColor"
-            className="bi bi-chevron-down"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fillRule="evenodd"
-              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
-            />
-          </svg>
+          />
         </p>
         {isOpen2 && (
           <div style={{ paddingLeft: "10px", fontSize: '17px', marginBottom: "15px" }}>
-            We welcome all Parternships. Our goal is to transform our
+            We welcome all parternships. Our goal is to transform our
             environment into a carbon free habitat. Kindly reach out to us for partnerships.
           </div>
         )}
@@ -79,24 +63,16 @@ export default function Dropdowns() {
           className="fs-5 d-flex align-items-center gap-4"
         >
           What is Goshilingy?
-          <svg
+          
+          <ChevronDown
+            size={20}
             style={{
               transform: isOpen3 ? "rotate(180deg)" : "rotate(0deg)",
               transition: "transform 0.5s ease",
             }}
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            fill="currentColor"
-            className="bi bi-chevron-down"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fillRule="evenodd"
-              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
-            />
-          </svg>
+          />
         </p>
+
         {isOpen3 && (
           <div style={{ paddingLeft: "10px", fontSize: '17px', marginBottom: "15px" }}>
             Goshilingy is our crypto currency which you will be rewarded with
@@ -111,23 +87,14 @@ export default function Dropdowns() {
           className="fs-5 d-flex align-items-center gap-4"
         >
           How will I be redeeming my carbon points?
-          <svg
+          
+          <ChevronDown
+            size={20}
             style={{
               transform: isOpen4 ? "rotate(180deg)" : "rotate(0deg)",
               transition: "transform 0.5s ease",
             }}
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            fill="currentColor"
-            className="bi bi-chevron-down"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fillRule="evenodd"
-              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
-            />
-          </svg>
+          />
         </p>
         {isOpen4 && (
           <div style={{ paddingLeft: "10px", fontSize: '17px', marginBottom: "15px" }}>
@@ -145,28 +112,19 @@ export default function Dropdowns() {
           className="fs-5 d-flex align-items-center gap-4"
         >
           Do you offer any Job Opportunities?
-          <svg
+          
+          <ChevronDown
+            size={20}
             style={{
               transform: isOpen5 ? "rotate(180deg)" : "rotate(0deg)",
               transition: "transform 0.5s ease",
             }}
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            fill="currentColor"
-            className="bi bi-chevron-down"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fillRule="evenodd"
-              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
-            />
-          </svg>
+          />
         </p>
         {isOpen5 && (
           <div style={{ paddingLeft: "10px", fontSize: '17px', marginBottom: "15px" }}>
             From our partnerships, we are confident that job opportunities 
-            will be made available for our volunteers. Once It is finalized
+            will be made available for our volunteers. Once they have been finalized,
             you will be informed.
           </div>
         )}

@@ -49,7 +49,8 @@ export default function Features() {
           <div 
             className="col-lg-5 project" 
             data-aos="fade-left"
-            onClick={() => navigate('/greenprojects')}
+            // onClick={() => navigate('/greenprojects')}
+            onClick={() => alert('Projects will be made available soon.')}
           >
             <h2>Clean Projects Support</h2>
           </div>

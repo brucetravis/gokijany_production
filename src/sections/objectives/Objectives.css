@@ -22,7 +22,7 @@
 #objectives > .container > div > div:nth-child(3) {
   background: url("../../data/images/vision.png") center no-repeat;
 }
-@media (max-width: 952px) {
+@media screen and (max-width: 992px) {
   #objectives .container > div > div:nth-child(3) {
     display: none;
   }

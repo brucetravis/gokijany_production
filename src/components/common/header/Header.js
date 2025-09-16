@@ -56,10 +56,10 @@ export default function Header() {
     { path: "/objectives", label: "Objectives", sectionId: "objectives" },
     // { path: "/careers", label: "Careers", sectionId: "careers" },
     // { path: "/impact", label: "Impact", sectionId: "impact" },
-    // { path: "/gallery", label: "Gallery", sectionId: "gallery" },
+    { path: "/gallery", label: "Gallery", sectionId: "gallery" },
     { path: "/whyus", label: "Why Us", sectionId: "whyus" },
     // { path: "/events", label: "Events", sectionId: "events" },
-    { path: "/contacts", label: "Contact Us", sectionId: "contacts" }
+    { path: "/contacts", label: "Contact Us", sectionId: "contacts" },
   ];
 
   const toggleMobileMenu = () => setIsMobile((prev) => !prev);

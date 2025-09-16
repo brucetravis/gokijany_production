@@ -4,7 +4,10 @@
   color: #0e1b12;
   /* min-height: 100vh; */
   padding: 50px;
-  background: linear-gradient(130deg, #1b3a2c 0%, #124234 50%, #0f3a34 100%);
+  /* background: linear-gradient(130deg, #1b3a2c 0%, #124234 50%, #0f3a34 100%); */
+  /* background: linear-gradient(270deg, #10b660 0%, #333333); */
+  background: linear-gradient(to bottom, #10b660 0%, #333333);
+
 }
 
 /* Hero */

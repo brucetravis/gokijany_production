@@ -7,7 +7,7 @@ export default function Mission() {
       <div className="container">
         <div className="d-flex row">
           <div className="col-lg-6">
-            <h1 className="mt-5">Our Mission</h1>
+            <h1>Our Mission</h1>
             <p className="p-lg-2 text-center">
               To integrate fintech with climate solutions making sustainability
               profitable and inclusive to all.
@@ -27,7 +27,7 @@ export default function Mission() {
           <div className="col-lg-6"></div>
           <div className="col-lg-6"></div>
           <div className="col-lg-6">
-            <h1 className="mt-5">Our Vision</h1>
+            <h1>Our Vision</h1>
 
             <p className="p-lg-2 text-center">
               To create global economy where sustainability is the most valuable

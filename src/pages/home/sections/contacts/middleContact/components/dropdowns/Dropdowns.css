@@ -3,4 +3,42 @@
   border-top: 1px solid #d4d2d2;
   padding: 10px;
   font-size: 16px !important;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+
+.contact-dropdown:last-child {
+  border-bottom: none;
+}
+
+.contact-dropdown p {
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background 0.3s ease;
+}
+
+.contact-dropdown p:hover {
+  background: #f5f5f5;
+}
+
+/* Dropdown Answer */
+.contact-dropdown div {
+  padding: 0.8rem 1rem 1.2rem 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .contact-middle-section {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }

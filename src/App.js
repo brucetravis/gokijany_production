@@ -17,6 +17,7 @@ import CompanyProfile from "./pages/companyprofile/CompanyProfile";
 import GreenProjects from "./pages/greenprojects/GreenProjects";
 import NotFound from "./pages/notfound/NotFound";
 import Adverts from "./pages/adverts/Adverts";
+import Projectdetails from "./pages/projectsdetails/Projectsdetails";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
           <Route path={"/greenprojects"} element={<GreenProjects />} />
           <Route path={'/companyprofile'} element={<CompanyProfile /> } />
           <Route path={'/storiesdetails/:storyId'} element={<StoriesDetails /> } />
+          <Route path={'/projectsdetails/:projectId'} element={<Projectdetails /> } />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -58,12 +58,12 @@ export default function Secure() {
               Meet the Team
             </Link>
 
-            <Link 
+            {/* <Link 
               to="/adverts"
               className="section_btn scrollto"
             >
               Adverts
-            </Link>
+            </Link> */}
           </div>
           <div className="col-lg-6 order-2 order-lg-1"></div>
         </div>
